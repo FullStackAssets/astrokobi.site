@@ -1,0 +1,62 @@
+---
+site: "astrokobi-space"
+title: "New AI‑Driven Glare‑Removal Technique Reveals Hidden Giant Exoplanet in JWST Data"
+description: "A machine‑learning method cuts JWST glare, exposing a giant exoplanet and boosting detection sensitivity up to 15‑fold."
+date: "2026-11-04T16:05:51.102Z"
+category: "cosmos"
+tags: 
+  - "jwst"
+  - "exoplanets"
+  - "glare-removal"
+  - "machine-learning"
+  - "astronomy"
+hero: 
+  url: ""
+  alt: ""
+  credit: ""
+  creditUrl: ""
+sources: 
+  - title: "Giant planet emerges from two-year-old JWST data thanks to glare-removal technique"
+    url: "https://phys.org/news/2026-11-giant-planet-emerges-year-jwst.html"
+  - title: "Giant planet emerges from two-year-old JWST data thanks to glare-removal technique"
+    url: "https://phys.org/news/2026-11-giant-planet-emerges-year-jwst.html"
+  - title: "307261 Máni - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/307261_M%C3%A1ni"
+---
+
+JWST’s unprecedented view of the distant universe still leaves nearby planetary systems shrouded in stellar glare. A Northwestern University team has built a computational pipeline that models nanometer‑scale telescope imperfections and uses machine learning to subtract that glare. Applying the pipeline to two‑year‑old JWST observations uncovered a giant exoplanet that vanished under conventional processing. The find shows that existing archives may already contain dozens of hidden worlds, extending JWST’s scientific return without new hardware.
+
+<Callout type="takeaway">Advanced glare‑removal can turn old JWST images into a treasure trove of hidden exoplanets.</Callout>
+
+## What happened
+Stars outshine their planets by factors of a million or more, making direct imaging extremely challenging. The new method combines physics‑based ray‑tracing of the telescope’s optics with a machine‑learning model trained on known instrumental variations, allowing it to predict and subtract the diffraction pattern caused by minute shifts and tilts of the mirrors.
+
+When the researchers re‑processed archival JWST data from the past two years, the algorithm boosted the effective sensitivity by up to fifteen times. In the cleaned image a giant exoplanet—previously invisible—appeared as a faint point source orbiting its host star. The results were reported in a Nature paper published on November 4, 2026.
+
+## Why it matters
+By extracting planets that were hidden in existing data, the technique expands the census of exoplanets without requiring additional telescope time, lowering the cost of discovery. It also pushes the detection threshold toward smaller, colder worlds, sharpening our view of planetary system architectures and informing models of planet formation. Astronomers, mission planners, and the broader scientific community stand to benefit from a richer, more complete inventory of nearby exoplanets.
+
+<ProsCons>
+  <Pros>
+    <li>Unlocks scientific value from existing JWST datasets.</li>
+    <li>Increases detection limits, enabling discovery of smaller and colder planets.</li>
+    <li>Cost‑effective, requiring no new hardware or mission time.</li>
+  </Pros>
+  <Cons>
+    <li>Relies on precise knowledge of telescope optics; modeling errors can masquerade as signals.</li>
+    <li>Computationally intensive, demanding high‑performance resources.</li>
+    <li>Single‑epoch detections need independent confirmation to rule out artifacts.</li>
+  </Cons>
+</ProsCons>
+
+## How to think about it
+Treat glare‑removed detections as candidates that require validation. Start by re‑examining the original raw frames to ensure the signal persists across processing steps. Cross‑match the candidate with other wavelengths or instruments, and where possible schedule follow‑up observations (e.g., radial‑velocity or transit monitoring) to confirm its planetary nature. Incorporate the method into a broader toolkit that includes coronagraphy and interferometry for a multi‑pronged search strategy.
+
+<Callout type="warning">Do not accept a glare‑removed detection as definitive without follow‑up observations or independent data sets.</Callout>
+
+## FAQ
+<FAQ>
+  <Question q="Can the glare‑removal pipeline be applied to other telescopes?">The core approach—modeling instrument‑specific point‑spread functions and training a machine‑learning filter—can be adapted to any high‑contrast imager, but each telescope requires its own calibration data.</Question>
+  <Question q="What kinds of exoplanets are most likely to be uncovered?">The technique is most effective for large, relatively warm planets that lie close to bright stars, where the glare dominates the signal.</Question>
+  <Question q="How do researchers guard against false positives introduced by the algorithm?">They cross‑check the cleaned image against the original data, look for consistent signals in multiple wavelengths, and seek confirmation with radial‑velocity or transit measurements.</Question>
+</FAQ>
