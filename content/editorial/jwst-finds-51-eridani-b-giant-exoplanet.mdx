@@ -1,0 +1,65 @@
+---
+site: "astrokobi-space"
+title: "JWST reveals hidden giant exoplanet 51 Eridani b using AI-driven starlight subtraction"
+description: "A new AI-based technique let JWST strip away stellar glare, finally imaging the massive 51 Eridani b, a planet 11 times Jupiter’s mass."
+date: "2026-11-06T17:05:28.918Z"
+category: "cosmos"
+tags: 
+  - "exoplanets"
+  - "jwst"
+  - "ai"
+  - "astronomy"
+  - "planet-imaging"
+hero: 
+  url: "https://live.staticflickr.com/65535/52621813063_ac7b746265_b.jpg"
+  alt: "NASA’s Webb Confirms Its First Exoplanett - transit light curve"
+  credit: "James Webb Space Telescope"
+  creditUrl: "https://www.flickr.com/photos/50785054@N03/52621813063"
+sources: 
+  - title: " Giant exoplanet emerges from the dark when the James Webb Space Telescope turns out the starlight "
+    url: "https://www.space.com/astronomy/exoplanets/giant-exoplanet-emerges-from-the-dark-when-the-james-webb-space-telescope-turns-out-the-starlight"
+  - title: "Giant exoplanet emerges from the dark when the James Webb Space Telescope turns out the starlight"
+    url: "https://www.space.com/astronomy/exoplanets/giant-exoplanet-emerges-from-the-dark-when-the-james-webb-space-telescope-turns-out-the-starlight"
+  - title: "List of largest exoplanets - Wikipedia"
+    url: "https://en.wikipedia.org/wiki/List_of_largest_exoplanets"
+---
+
+During a recent JWST observation of the young star 51 Eridani, astronomers finally saw the massive planet 51 Eridani b that had eluded the telescope for years. By applying a new physics‑based learning algorithm that creates a digital twin of the telescope, they removed enough starlight to reveal the planet’s faint glow. The planet is roughly eleven times the mass of Jupiter and orbits a star 97 light‑years from Earth. This breakthrough shows that software can extend the reach of even the most powerful hardware. It also opens a clearer view of other hidden worlds.
+
+<Callout type="takeaway">AI‑driven starlight subtraction let JWST image a planet previously invisible.</Callout>
+
+## What happened
+The giant world 51 Eridani b was first identified in 2015 with ground‑based instruments, but JWST’s early images showed no trace of it because the star’s glare overwhelmed the planet’s faint signal. Even the telescope’s coronagraph, which blocks direct starlight, left enough scattered light that the planet remained hidden.
+
+A team led by Jason Wang introduced the FLIP (Physics‑based Learning for Imaging Planets) method, building a high‑fidelity digital twin of JWST’s optics and vibrations. By training the model on reference stars and accounting for minute mirror wobble caused by cryocooler motors, the algorithm subtracted residual starlight far more precisely than traditional techniques, revealing the planet’s signature.
+
+## Why it matters
+Recovering 51 Eridani b demonstrates that advanced AI can unlock data already collected by existing observatories, accelerating the census of giant exoplanets that orbit far from their stars. The approach also informs the design of future missions, where software‑driven contrast enhancement could reduce the need for ever‑larger hardware. Moreover, it highlights a new partnership between physics‑based modeling and machine learning, a template for tackling other low‑signal astrophysical problems.
+
+<ProsCons>
+  <Pros>
+    <li>Enables detection of planets up to 100,000 times fainter than their host stars.</li>
+    <li>Extends the scientific return of JWST without additional hardware.</li>
+    <li>Shows a scalable workflow that can be adapted to other telescopes.</li>
+  </Pros>
+  <Cons>
+    <li>Requires an extremely accurate model of the telescope’s behavior.</li>
+    <li>Potential for processing artifacts if the model misrepresents the optics.</li>
+    <li>Computationally intensive, demanding significant processing resources.</li>
+  </Cons>
+</ProsCons>
+
+## How to think about it
+Treat AI‑driven starlight subtraction as a complementary tool rather than a replacement for hardware. Validate any detection with independent observations or alternative reduction pipelines, and document the modeling assumptions used to build the digital twin. When planning new observations, consider whether post‑processing can achieve the needed contrast before committing to longer exposure times.
+
+<Callout type="warning">Do not rely solely on algorithmic subtraction for discovery claims without independent verification, as subtle modeling errors can mimic planetary signals.</Callout>
+
+## FAQ
+<FAQ>
+  <Question q="How does the FLIP algorithm differ from traditional coronagraphic imaging?">FLIP adds a physics‑based digital replica of the telescope to model and subtract residual starlight, whereas coronagraphs only block direct light and leave scattered glare.
+  </Question>
+  <Question q="Can this technique be applied to other telescopes like Hubble or future missions?">Yes, any observatory with a well‑characterized point‑spread function can benefit, though the model must be tailored to each instrument’s specific vibrations and optics.
+  </Question>
+  <Question q="What are the limits of detecting planets using starlight subtraction?">The method is constrained by how accurately the telescope’s behavior can be modeled and by the signal‑to‑noise ratio of the original data; extremely low‑contrast planets may still remain out of reach.
+  </Question>
+</FAQ>
