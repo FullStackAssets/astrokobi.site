@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 
 # Build script that handles TinaCMS configuration gracefully
 # If TinaCMS credentials are not provided, we skip the TinaCMS cloud build
